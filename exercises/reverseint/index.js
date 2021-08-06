@@ -10,11 +10,10 @@
 
 function reverseInt(n) {
   let reversedInt = 0;
-  let isNegative = false;
+  const number = n;
 
   if (n < 0) {
     n = Math.abs(n);
-    isNegative = true;
   }
 
   while (n > 0) {
@@ -22,10 +21,7 @@ function reverseInt(n) {
     n = Math.floor(n / 10);
   }
 
-  if (isNegative) {
-    return -reversedInt;
-  }
-  return reversedInt;
+  return reversedInt * Math.sign(number);
 }
 
 module.exports = reverseInt;

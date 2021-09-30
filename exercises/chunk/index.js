@@ -10,7 +10,6 @@
 
 function chunk(array, size) {
   const chunked = [];
-  // let index = 0;
 
   while (array.length) {
     chunked.push(array.slice(0, size));

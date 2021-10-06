@@ -9,11 +9,10 @@
 #  anagrams('Hi there', 'Bye there') --> False
 
 def anagrams(stringA, stringB):
-  strA = stringA[:]
-  strB = stringB[:]
-
-  strA = strA.sort()
-  strB = strB.sort()
+  strA = list(stringA)
+  strB = list(stringB)
+  strA.sort()
+  strB.sort()
   s1 = ''.join(strA)
   s2 = ''.join(strB)
 

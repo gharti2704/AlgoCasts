@@ -20,6 +20,10 @@ class Queue {
   remove() {
     return this.values.shift();
   }
+
+  peek() {
+    return this.values[this.values.length - 1];
+  }
 }
 
 module.exports = Queue;
